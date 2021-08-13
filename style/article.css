@@ -229,7 +229,31 @@ textarea {
 }
 
 @media screen and (max-width: 1100px) {
-    
+    #contacto {
+        width: 100%;
+    }
+    #contacto form {
+        border-radius: 0;
+        width: 100%;
+        padding: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #contacto input {
+        font-size: 50px;
+    }
+    #contacto textarea {
+        font-size: 50px;
+    }
+    #contacto .form-row {
+        flex-direction: column;
+    }
+    #contacto label {
+        font-size: 50px;
+    }
+    #contacto .field {
+        border:none;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -246,5 +270,14 @@ textarea {
         font-size: 20px;
         font-family: 'Open Sans';
         font-weight: 300;
+    }
+    #contacto input {
+        font-size: 30px;
+    }
+    #contacto textarea {
+        font-size: 30px;
+    }
+    #contacto label {
+        font-size: 30px;
     }
 }

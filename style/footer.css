@@ -2,7 +2,6 @@ footer {
     background: var(--white);
     color: var(--royal-blue-dark);
     text-align: center;
-    margin-top: 50px;
     border-top: 5px solid var(--royal-blue-dark);
     display: inline-block;
     padding-bottom: 10px;
