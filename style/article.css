@@ -51,7 +51,7 @@ section + section {
 
     width: 300px;
     border-radius: 50%;
-    border: 10px solid var(--white);
+    border: 15px solid var(--white);
 }
 
 #sobre-mi h1{
@@ -171,17 +171,17 @@ section + section {
     align-items: center;
     background: var(--white);
     color: var(--royal-blue-dark);
-    padding: 50px;
     border-radius: 20px;
-    font-size: 30px;
+    margin-bottom: 50px;
+    padding: 50px;
 }
 
 #contacto .field {
     margin: 10px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1.5em;
     font-weight: bold;
-    border: 1px solid var(--royal-blue-dark);
+    border: none;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -193,6 +193,7 @@ section + section {
 }
 
 #contacto input {
+    font-size: 1em;
     font-family: 'Open Sans';
     border: none;
 }
@@ -209,6 +210,7 @@ textarea {
     height: 100%;
     width: 100%;
     font-family: 'Open Sans';
+    font-size: 1em;
     resize: none;
     border: none;
 }
@@ -233,6 +235,7 @@ textarea {
         width: 100%;
     }
     #contacto form {
+        margin-bottom: 0;
         border-radius: 0;
         width: 100%;
         padding: 0;

@@ -35,6 +35,7 @@ async function introAnimation() {
         }
         await sleep(500);
     }
+    cursorLogo.style.display = 'none';
     subLogo.style.opacity = 1;
     await sleep(1000);
     downLogo.style.visibility = 'initial';
