@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" href="fontello/css/fontello.css">
+	<link rel="stylesheet" href="style/global.css">
+	<link rel="stylesheet" href="style/background.css">
+	<link rel="stylesheet" href="style/nav.css">
+	<link rel="stylesheet" href="style/landing.css">
+	<link rel="stylesheet" href="style/article.css">
+	<link rel="stylesheet" href="style/footer.css">
+
+	<meta charset="utf-8">
+	<meta name="description" content="Ángel Daniel Pinheiro @adanielpincab desarrollo software (página personal)">
+	<title>Ángel Daniel Pinheiro</title>
+</head>
+<body>
+	<!-- BACKGROUND -->
+	<div class="background">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	 </div>
+	 <!-- BACKGROUND -->
+	
+	<nav>
+		<h1>Ángel Daniel Pinheiro</h1>
+		<div>
+			<span class="tag">@adanielpincab</span>
+			<a href="https://instagram.com/adanielpincab" target="_blank"><i class="icon-instagram"></i></a>
+			<a href="https://twitter.com/adanielpincab" target="_blank"><i class="icon-twitter"></i></a>
+			<a href="https://github.com/adanielpincab" target="_blank"><i class="icon-github"></i></a>
+		</div>
+	</nav>
+
+	<header>
+		<div>
+			<div>
+				<span id="name"><b id="cursor">_</b></span>
+			</div>
+			<h1 id="subtitle">Desarrollo de software</h1>
+		</div>
+		<i onclick="window.scroll({top: window.innerHeight*0.9,behavior: 'smooth'})" id="icon-angle-circled-down" class="icon-angle-circled-down"></i>
+	</header>
+
+	<article>
+		<section id="sobre-mi">
+			<img class="profilepic" src="media/profile3.png">
+			<div>
+				<h1>Sobre mí</h1>
+				<p>
+					Estudio <b>ingeniería informática</b> en Madrid. Apasionado por la programación desde que tengo memoria, siempre dispuesto a aprender nuevas tecnologías y nuevos caminos en el mundo del desarrollo.
+				</p>
+				<p>
+					El surgimiento de la tecnología blockchain en la última década es lo que más ha atraído mi atención. Tecnologías relativamente nuevas como  Bitcoin y Ethereum despiertan en mí un gran interés.
+				</p>
+			</div>
+		</section>
+
+		<section id="competencias">
+			<h1>Competencias</h1>
+			<div class="sides">
+				<div>
+					<h2>Frontend</h2>
+					<div id="langs">
+						<i class="icon-html5"></i>
+						<i class="icon-css3"></i>
+						<i class="icon-javascript"></i>
+					</div>
+					<p>Varios años de experiencia con los tres pilares del desarrollo web: <b>HTML5</b>, <b>CSS3</b> y <b>Javacsript</b>. <br>
+					El resultado: La página web que estás viendo ahora mismo.</p>
+				</div>
+				<hr>
+				<div>
+					<h2>Backend</h2>
+					<div id="langs">
+						<i class="icon-c"></i>
+						<i class="icon-cplusplus"></i>
+						<i class="icon-python"></i>
+					</div>
+					<p>En mis estudios he trabajado con lenguajes de la familia <b>C</b>, más cercanos al sistema operativo.<br>
+					En cuanto a lenguajes de más alto nivel, Python es mi punto fuerte.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="contacto">
+			<h1>Contacta conmigo</h1>
+			<form id="form">
+				<div>
+					<div class="form-row">
+						<div class="field">
+							<label for="from_name">Nombre: </label>
+							<input type="text" name="from_name" id="from_name" placeholder="Introduce tu nombre" required>
+						</div>
+						<div class="field">
+							<label for="from_enterprise">Empresa/Organización: </label>
+							<input type="text" name="from_enterprise" id="from_enterprise" placeholder="Nombre de tu empresa">
+						</div>
+					</div>
+					<div class="field">
+					<label for="from_email">Email de contacto: </label>
+					<input type="text" name="from_email" id="from_email" placeholder="ejemplo@ejemplo.com" required>
+					</div>
+					<div class="field">
+					<label for="subject">Asunto: </label>
+					<input type="text" name="subject" id="subject" placeholder="Introduce el asunto" required>
+					</div>
+					<div class="field">
+					<label for="message">Mensaje: </label>
+					<textarea name="message" id="message" placeholder="Escribe tu mensaje..." required></textarea>
+					</div>
+				</div>
+				<input type="submit" id="button" value="Enviar" >
+			</form>			  
+		</section>
+	</article>
+
+	<footer>
+		@adanielpincab
+	</footer>
+
+	</div>
+</body>
+<script src="scripts/background.js"></script>
+<script src="scripts/landing.js"></script>
+<script src="scripts/nav.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript"> emailjs.init('user_SuF6vDbnLvlrfpyVcmnQO') </script>
+</html>

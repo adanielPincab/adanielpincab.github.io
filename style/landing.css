@@ -1,0 +1,91 @@
+/* LANDING*/
+
+body {
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+header #name, #cursor{
+	text-align: center;
+	font-size: 90px;
+}
+header #name { font-weight: bold; }
+header #cursor {position: absolute;}
+
+header h1 {
+	opacity: 0;
+	font-weight: 100;
+	font-size: 50px;
+	transition: opacity 1s;
+}
+
+.icon-angle-circled-down {
+    visibility: hidden;
+    opacity: 0;
+	cursor: pointer;
+	margin-top: 10vh;
+	font-size: 50px;
+	animation: dip 2s infinite;
+	transition: opacity 1s;
+}
+section .icon-angle-circled-down {
+    visibility: initial;
+    opacity: 1;
+}
+
+@keyframes dip {
+	0%{transform: translateY(0px);}
+	50%{transform: translateY(30px);}
+	100%{transform: translateY(0px);}
+}
+
+@media screen and (max-width: 1100px) {
+    header div div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    header div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header #name, #cursor{
+        font-size: 100px;
+    }
+    header h1 {
+        font-size: 70px;
+    }
+    .icon-angle-circled-down {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header #name, #cursor{
+        font-size: 50px;
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    .icon-angle-circled-down {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    header h1 {
+        text-align: center;
+    }
+}

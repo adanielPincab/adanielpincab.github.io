@@ -1,0 +1,9 @@
+footer {
+    background: var(--white);
+    color: var(--royal-blue-dark);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 50px;
+    border-top: 5px solid var(--royal-blue-dark);
+}
