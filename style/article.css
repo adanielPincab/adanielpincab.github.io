@@ -228,6 +228,10 @@ textarea {
     color: var(--royal-blue-dark);
 }
 
+@media screen and (max-width: 1100px) {
+    
+}
+
 @media screen and (max-width: 750px) {
     .form-row {
         flex-direction: column;
