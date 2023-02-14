@@ -1,0 +1,102 @@
+#hero-section {
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20vh;
+}
+
+#hero-section h1 {
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+#hero-section h1>b {
+    font-weight: 700;
+}
+
+#hero-section h2 {
+    font-size: 2.5vw;
+    font-weight: 300;
+}
+
+#hero-section>div:nth-child(1) {
+    margin-left:5vw;
+    width: 40vw
+}
+
+#profile-container {
+    margin-right:5vw;
+    width: 25vw;
+}
+
+#profile-pic, #profile-mask {
+    width: 100%;
+}
+
+#profile-mask {
+    position: absolute;
+    width: 26vw;
+}
+
+#arrow-down {
+    opacity: 0%;
+    cursor: pointer;
+    font-size: 3vw;
+    position: absolute;
+    top: 85vh;
+    left: 47vw;
+    animation: floating 2s ease-in-out infinite;
+    transition: opacity 0.5s;
+}
+
+@keyframes floating {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(20px);}
+    100% {transform: translateY(00px);}
+}
+
+@media screen and (max-width: 800px) {
+    #hero-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #hero-section>div:nth-child(1) {
+        margin-left:0;
+        width: 100%;
+        text-align: center;
+    }
+    #hero-section>div:nth-child(2) {
+        margin-right:0;
+    }
+
+    #profile-container {
+        width: 50%;
+    }
+
+    #profile-mask {
+        width: 52%;
+    }
+
+    #hero-section h1 {
+        font-size: 7vw;
+        font-weight: 700;
+    }
+    
+    #hero-section h1>b {
+        font-weight: 700;
+    }
+    
+    #hero-section h2 {
+        font-size: 5vw;
+        font-weight: 300;
+    }
+
+    #arrow-down {
+        font-size: 3em;
+    }
+}

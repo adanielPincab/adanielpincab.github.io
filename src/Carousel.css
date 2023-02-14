@@ -1,0 +1,63 @@
+.carousel>* {
+    text-decoration: none;
+    color: inherit;
+}
+
+.carousel {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 19vw 19vw 19vw 19vw;
+    grid-gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.nutshell {
+    border-radius: 25px;
+    height: 200px;
+    display: flex;
+    overflow: hidden;
+    transition: background, transform, 0.2s;
+}
+
+.nutshell:hover {
+    transform: scale(1.03);
+}
+
+.nutshell-text, .nutshell-image {
+    width: 50%;
+}
+
+.nutshell-image {
+    background-size: cover;
+    background-position: center;
+}
+
+.nutshell-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.nutshell-text>h1 {
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 1500px) {
+    .carousel {
+        grid-template-columns: 40vw 40vw;
+        align-items: initial;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .carousel {
+        grid-template-columns: 80vw;
+    }
+
+    .nutshell {
+        height: auto;
+    }
+}

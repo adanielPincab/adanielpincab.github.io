@@ -1,0 +1,73 @@
+.chooseScreen {
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.chooser {
+    z-index: 999;
+    display: flex;
+}
+
+.chooser>* {
+    cursor: pointer;
+    padding: 10px;
+    font-size: max(3vw, 5vh);
+}
+
+.text {
+    transform: translateX(-3em);
+    width: 100%;
+    box-sizing: border-box;
+    font-size: max(2vw, 3vh);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text:hover {
+    transform: translateX(-3em) scale(1.02);
+}
+
+.lefted {
+    transform: translateX(3em);
+}
+
+.lefted:hover {
+    transform: translateX(3em) scale(1.02);
+}
+
+
+#rotorPre>span, #rotorPost>span {
+    display: inline;
+    transition: transform, opacity, 0.2s;
+}
+
+#rotorPost, #rotorPre{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.textout { opacity: 0;}
+.textin { opacity: 1;}
+
+#es.textout, #in.textout{ transform: translateY(0em);}
+#es.textin, #in.textin{ transform: translateY(0.7em);}
+
+#at.textout { transform: translateY(-1.7em);}
+#at.textin { transform: translateY(-0.7em);}
+
+#git.textout { transform: translate(1.9em, -1.7em);}
+#git.textin { transform: translate(1.9em, -0.7em);}
+
+@media screen and (max-width: 800px) {
+    .chooseScreen {
+        flex-direction: column;
+    }
+}
