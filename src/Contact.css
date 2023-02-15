@@ -2,25 +2,26 @@
     overflow-x: hidden;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .chooser {
     z-index: 999;
     display: flex;
+    transform: translate(10vw);
 }
 
 .chooser>* {
     cursor: pointer;
     padding: 10px;
-    font-size: max(3vw, 5vh);
+    font-size: max(3vw, 4vh);
 }
 
 .text {
     transform: translateX(-3em);
     width: 100%;
     box-sizing: border-box;
-    font-size: max(2vw, 3vh);
+    font-size: max(2vw, 2vh);
     text-decoration: none;
     color: inherit;
     transition: transform 0.2s;
@@ -69,5 +70,11 @@
 @media screen and (max-width: 800px) {
     .chooseScreen {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .chooser {
+        transform: translate(0);
     }
 }

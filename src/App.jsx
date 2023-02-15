@@ -5,6 +5,7 @@ import Portfolio from './assets/portfolio.json'
 import Carousel from './Carousel';
 import Techs from './Techs';
 import Contact from './Contact';
+import Footer from './Footer';
 
 function App() {
   let num = 0;
@@ -48,6 +49,7 @@ function App() {
         <h1 style={{color: accent}}>Contacta conmigo</h1>
         <Contact accent={accent}/>
       </section>
+      <Footer />
     </div>
   )
 }
