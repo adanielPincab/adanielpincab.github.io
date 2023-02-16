@@ -5,7 +5,7 @@ footer {
     align-items: center;
 }
 
-footer>a {
+footer>p {
     padding: 25px;
     text-decoration: none;
     color: inherit;
